@@ -91,18 +91,10 @@ github:
   link: https://github.com/$VALUE
 
 twitter:
-  icon-old: fa-brands fa-twitter
-  icon: fa-solid fa-poo
-  text: Xitter
-  tooltip: X/Twitter (seldom used)
+  icon: fa-brands fa-twitter
+  text: Twitter
+  tooltip: Twitter
   link: https://twitter.com/$VALUE
-
-bluesky:
-  icon-old: fa-brands fa-bluesky
-  icon: fa-brands fa-bluesky
-  text: Bluesky
-  tooltip: Bluesky
-  link: https://bsky.app/profile/$VALUE.bsky.social
 
 facebook:
   icon: fa-brands fa-facebook
