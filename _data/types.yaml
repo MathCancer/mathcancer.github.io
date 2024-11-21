@@ -92,9 +92,15 @@ github:
 
 twitter:
   icon: fa-brands fa-twitter
-  text: Twitter
-  tooltip: Twitter
+  text: Xitter
+  tooltip: X/Twitter (Now with fascism)
   link: https://twitter.com/$VALUE
+
+bluesky:
+  icon: fa-brands fa-bluesky
+  text: Bluesky
+  tooltip: Bluesky
+  link: https://bsky.app/profile/$VALUE.bsky.social
 
 facebook:
   icon: fa-brands fa-facebook
