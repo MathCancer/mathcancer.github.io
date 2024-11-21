@@ -4,9 +4,9 @@
 # MathCancer's Website
 
 Paul Macklin's MathCancer Lab is based in the 
-[Department of Intelligent Systems Engineering]{https://engineering.indiana.edu/} at the 
-[Luddy School of Informatics, Computing and Engineering]{https://luddy.indiana.edu/} at 
-[Indiana University-Bloomington]{https://bloomington.iu.edu/}. 
+[Department of Intelligent Systems Engineering](https://engineering.indiana.edu/) at the 
+[Luddy School of Informatics, Computing and Engineering](https://luddy.indiana.edu/) at 
+[Indiana University-Bloomington](https://bloomington.iu.edu/). 
 Our lab works to develop data-driven computational systems that can help engineer the behavior of multicellular systems, especially in cancer and tissue engineering.
 
 To advance these aims, our lab is leading developments in the following areas of strength:
