@@ -97,6 +97,7 @@ twitter:
   link: https://twitter.com/$VALUE
 
 bluesky:
+  icon-old: fa-brands fa-bluesky
   icon: fa-brands fa-bluesky
   text: Bluesky
   tooltip: Bluesky
