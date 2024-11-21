@@ -93,11 +93,11 @@ github:
 twitter:
   icon: fa-brands fa-twitter
   text: Twitter
-  tooltip: Twitter
+  tooltip: Twitter (Now with facism)
   link: https://twitter.com/$VALUE
 
 bluesky:
-  icon: fa-brands fa-twitter
+  icon: fa-brands fa-bluesky
   text: Bluesky
   tooltip: Bluesky
   link: https://bsky.app/profile/$VALUE.bsky.social
