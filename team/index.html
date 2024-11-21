@@ -39,23 +39,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Team | Paul Macklin's MathCancer Lab</title>
+<title>Team | Lab Website Template</title>
 
 <link rel="icon" href="/images/icon.png">
 
 <meta name="title" content="Team">
-<meta name="description" content="An engaging 1-3 sentence description of your lab.">
+<meta name="description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
 
 <meta property="og:title" content="Team">
-<meta property="og:site_title" content="Paul Macklin's MathCancer Lab">
-<meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
-<meta property="og:url" content="">
+<meta property="og:site_title" content="Lab Website Template">
+<meta property="og:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="og:url" content="https://mathcancer.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Team">
-<meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
-<meta property="twitter:url" content="">
+<meta property="twitter:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="twitter:url" content="https://mathcancer.github.io">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
 
@@ -70,17 +70,17 @@
       "@type": "WebSite",
     
     "name": "Team",
-    "description": "An engaging 1-3 sentence description of your lab.",
+    "description": "by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
     "headline": "Team",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
     },
-    "url": ""
+    "url": "https://mathcancer.github.io"
   }
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="https://mathcancer.github.io/feed.xml">
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -90,9 +90,9 @@
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
-<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet" media="none" onload="this.removeAttribute('media'); this.onload = null;">
 <noscript>
-  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet">
 </noscript>
 
   <!-- third party styles -->
@@ -156,6 +156,10 @@
 
   
     <link href="/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/details.css" rel="stylesheet">
   
 
   
@@ -330,6 +334,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -352,6 +358,8 @@
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
+
+  <script src="/_scripts/table-wrap.js"></script>
 
   <script src="/_scripts/tooltip.js"></script>
 
@@ -395,15 +403,9 @@
     }
   </style>
   <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle> <!-- orig -->
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.15s"></circle> 
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.2s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.3s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle> <!-- orig -->
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.0s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle> <!-- orig -->
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.15s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.5s"></circle>
+    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
+    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
+    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
   </g>
   <path fill="#38bdf8" d="
       M 0 -22.5
@@ -440,10 +442,12 @@
       </span>
     
     
-      <span class="title" data-tooltip="Home">
+      <span class="title-text" data-tooltip="Home">
         
-          <span>Paul Macklin's MathCancer Lab</span>
+          <span class="title">Lab Website Template</span>
         
+        
+          <span class="subtitle">by the Greene Lab</span>
         
       </span>
     
@@ -479,7 +483,7 @@
       
     
       
-        <a href="/contact/" data-tooltip="Email, google-scholar, and bluesky">
+        <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
       
@@ -492,11 +496,8 @@
   modify main content of page:
   - add section breaks
   - attach section properties
-  - wrap each table in div to allow for scrolling
   - filter out blank sections
 -->
-
-
 
 
 
@@ -528,121 +529,197 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 -->
 
 <div class="portrait-wrapper">
+  <a href="/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
+    
+      <i class="icon fa-solid fa-microscope"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Jane Smith
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Principal Investigator
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        University of Colorado
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
   <a href="/members/macklin.html" class="portrait" data-style="" aria-label="Paul Macklin">
+    
+      <i class="icon fa-solid fa-microscope"></i>
+    
+
     <img src="/images/team/some-image.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Paul Macklin
-          </span>
-        
-
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-microscope"></i>
-            <span>Principal Investigator</span>
-          </span>
-        
+      <span class="portrait-name">
+        Paul Macklin
       </span>
+    
+
+    
+      <span class="portrait-description">
+        Principal Investigator
+      </span>
+    
+
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
   <a href="/members/bucher.html" class="portrait" data-style="" aria-label="Elmar Bucher">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
     <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Elmar Bucher
-          </span>
-        
-
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-graduation-cap"></i>
-            <span>PhD Student</span>
-          </span>
-        
+      <span class="portrait-name">
+        Elmar Bucher
       </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
   <a href="/members/heiland.html" class="portrait" data-style="" aria-label="Randy Heiland">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
     <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Randy Heiland
-          </span>
-        
-
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-graduation-cap"></i>
-            <span>PhD Student</span>
-          </span>
-        
+      <span class="portrait-name">
+        Randy Heiland
       </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/john-doe.html" class="portrait" data-style="" aria-label="John Doe">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        John Doe
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
   <a href="/members/rocha.html" class="portrait" data-style="" aria-label="Heber Rocha">
+    
+      <i class="icon fa-solid fa-glasses"></i>
+    
+
     <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Heber Rocha
-          </span>
-        
-
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-glasses"></i>
-            <span>Postdoctoral Researcher</span>
-          </span>
-        
+      <span class="portrait-name">
+        Heber Rocha
       </span>
+    
+
+    
+      <span class="portrait-description">
+        Postdoctoral Researcher
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/sarah-johnson.html" class="portrait" data-style="" aria-label="Sarah Johnson">
+    
+      <i class="icon fa-solid fa-code"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Sarah Johnson
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Lead Programmer
+      </span>
+    
+
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
   <a href="/members/sundus.html" class="portrait" data-style="" aria-label="Aneequa Sundus">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
     <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Aneequa Sundus
-          </span>
-        
-
-        
-          <span class="portrait-role">
-            
-            <i class="icon fa-solid fa-graduation-cap"></i>
-            <span>PhD Student</span>
-          </span>
-        
+      <span class="portrait-name">
+        Aneequa Sundus
       </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
     
   </a>
 </div>
@@ -652,7 +729,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
   
   
 
-  <section class="background" data-size="2" data-dark="true" style="--image: url('/images/background.jpg')">
+  <section class="background" data-size="2" data-dark="true">
     <!--
   background: images/background.jpg;
   dark: true;
@@ -732,7 +809,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:macklinp@iu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -747,7 +824,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0002-9925-0151" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -762,7 +839,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=zUorXGEAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -777,7 +854,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/MathCancer" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -792,8 +869,8 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/MathCancer" data-tooltip="X/Twitter (seldom used)" data-style="bare" aria-label="X/Twitter (seldom used)">
-      <i class="icon fa-solid fa-poo"></i>
+    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
+      <i class="icon fa-brands fa-twitter"></i>
       
     </a>
   </div>
@@ -807,23 +884,8 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/MathCancer" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
+    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
       <i class="icon fa-brands fa-youtube"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://bsky.app/profile/MathCancer.bsky.social" data-tooltip="Bluesky" data-style="bare" aria-label="Bluesky">
-      <i class="icon fa-brands fa-bluesky"></i>
       
     </a>
   </div>
@@ -834,7 +896,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
 
   <div>
     © 2024
-    Paul Macklin's MathCancer Lab
+    Lab Website Template
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template

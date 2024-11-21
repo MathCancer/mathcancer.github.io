@@ -1,0 +1,5 @@
+# use this to grab the most recent template from Greenelab 
+
+git remote add template https://github.com/greenelab/lab-website-template
+git fetch --all
+git merge template/main --allow-unrelated-histories
