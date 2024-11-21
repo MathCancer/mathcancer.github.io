@@ -1,7 +1,7 @@
 ---
-name: Jane Smith
+name: Aneequa Sundus
 image: images/photo.jpg
-role: pi
+role: phd
 aliases:
   - J. Smith
   - J Smith

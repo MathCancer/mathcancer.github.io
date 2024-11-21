@@ -1,5 +1,5 @@
 ---
-name: John Doe
+name: Elmar Bucher
 image: images/photo.jpg
 role: phd
 group: alum

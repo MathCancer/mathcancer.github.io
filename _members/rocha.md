@@ -1,8 +1,8 @@
 ---
-name: John Doe
+name: Heber Rocha
 image: images/photo.jpg
-role: phd
-group: alum
+role: postdoc
+# group: alum
 links:
   github: john-doe
 ---
