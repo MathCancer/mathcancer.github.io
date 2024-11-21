@@ -92,8 +92,8 @@ github:
 
 twitter:
   icon: fa-brands fa-twitter
-  text: Twitter
-  tooltip: Twitter (Now with fascism)
+  text: Xitter
+  tooltip: X/Twitter (Now with fascism)
   link: https://twitter.com/$VALUE
 
 bluesky:
