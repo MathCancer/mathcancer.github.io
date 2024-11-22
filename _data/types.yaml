@@ -92,7 +92,7 @@ github:
 
 twitter:
   icon-old: fa-brands fa-twitter
-  icon: fa-solid fa-poo
+  icon: fa-brands fa-x-twitter
   text: Xitter
   tooltip: X/Twitter (seldom used)
   link: https://twitter.com/$VALUE
