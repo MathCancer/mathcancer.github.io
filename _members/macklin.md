@@ -2,10 +2,15 @@
 name: Paul Macklin
 image: images/team/macklin.jpg
 role: pi
-affiliation: Indiana University
+description: Principal Investigator
 links:
-  orcid: 0000-0002-9925-0151
-  bluesky: MathCancer
+ orcid: 0000-0002-9925-0151
+ google-scholar: zUorXGEAAAAJ
+ home-page: http://MathCancer.org
+ github: MathCancer
+ bluesky: mathcancer
+ twitter: mathcancer
+ email: macklinp@iu.edu
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
