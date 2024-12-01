@@ -20,7 +20,7 @@ When Paul isn't working, his hobby is astrophotography. You can find some of his
 {%
   include figure.html
   image="images/astro/macklin_NAN_mosaic.jpg"
-  caption="North America Nebula mosaic in false color. (c) Paul Macklin 2024"
+  caption="North America Nebula mosaic in false color. (c) Paul Macklin 2024. [click here for prints](https://mathcancer.darkroom.com/products/nebulas/1552601), and [click here for technical details](https://www.astrobin.com/enyzcs/)."
   link="team"
   width="1000px"
 %}
